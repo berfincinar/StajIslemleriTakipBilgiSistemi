@@ -1,0 +1,206 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none; 
+    list-style-type: none;
+    color:white;
+}
+body{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+
+.header{
+    width:100%;
+    height:125px;
+    background:#000;
+    display:flex; 
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items:center;
+  
+}
+.nav{
+    width:80%;
+    height:100%;
+}
+.main-list{
+    height:100%;
+    width:100%;
+    align-items:center;
+    text-align:center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.primary-list{
+    display: none;
+    position:fixed;
+    background:black;
+    width:152px;
+    height:670px;
+    top:100px;
+}
+.list-item{
+    cursor:pointer;
+    /*  imlecimizin mevcut öğenin üzerine getirdiğimizde alacağı formatı,şekli belirtiyoruz.*/
+    position:relative;	
+   font-family: 'Roboto', sans-serif;
+    display:block;
+}
+.li a{
+    padding:8px;
+    margin:4px;
+}
+
+li:hover .primary-list{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+header nav ul p{
+font-family: 'Roboto', sans-serif;
+text-align: center;
+}
+
+/*İÇ ÇERÇEVE*/
+#duz-cerceve{
+    border:3px solid #000;
+    width:1200px;
+    height:540px;
+    position: relative;
+    margin: auto;
+}
+/*ARAMA ÇUBUGU*/
+ #box {
+    max-width: 300px;
+    position: relative;
+    left: 990px;
+    bottom: 500px;
+}
+ 
+  #box .fa-search {
+    position: absolute;
+    top: 4px;
+    left: 12px;
+    font-size: 20px;
+    color:black;
+}
+ 
+#search {
+    width: 200px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    font-size:15px;
+    padding: 12px 20px 12px 40px;
+   color: black;
+   height: 25px;
+}
+
+/*SOL MENÜ*/
+
+ #duz-cerceve ul.saolMenu{
+    list-style-type: none;
+}
+ #duz-cerceve li a {
+  display: block;
+  width: 155px;
+  color: white;
+  text-decoration:none;
+  background-color: #000;
+  height:89.5px;
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+  bottom:2px;
+  right :2px;
+}
+
+/*İşletmeBilgi Cervevesı*/
+#bilgiBoard{
+    border:3px solid #000;
+    width:1000px;
+    height:400px;
+    position: relative;
+    margin: auto;
+    bottom: 470px;
+    margin-right: 20px;
+}
+
+/*İşletmeBilgisi Menusu*/
+
+#bilgiBoard ul.isletmeBilgileri{
+    list-style-type: none;
+}
+ #bilgiBoard li a {
+  width: 130px;
+  height:25em;
+  color: white;
+  text-decoration:none;
+  background-color: #000;
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+  top:-1px;
+  right :2px;
+  line-height:60px;
+  text-align: center;
+}
+
+/*Siyah Ust Banner*/
+
+ #bilgiBoard ul.ustBanner{
+  list-style-type: none;
+ }
+
+#bilgiBoard ul.ustBanner li{
+  float: left;
+}
+#bilgiBoard ul.ustBanner li a{
+  text-decoration:none;
+  background-color: #000;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+  width: 999px;
+  height:60px;
+  font-size: 30px;
+
+}
+
+#bilgiBoard form table{
+    display: block;
+    margin-top: 50px;
+    position: relative;
+
+}
+#bilgiBoard form table tr{
+    margin:5px ;
+}
+
+#bilgiBoard form table tr td  {
+    position: relative;
+    bottom:15em;
+    border:3px solid #000;
+    width:400px;
+    height:30px;
+    left:350px;
+    border-radius:20px;
+    color: black;
+    text-align: center;
+   
+}
+#bilgiBoard form table tr.tr1 td{
+    margin: 50px;
+}
+
+
+/*BilgiKısmı*/
+#bilgiBoard form table tr td p{
+    text-align: center;
+    position:relative;
+    top:0px;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    margin:10px ;
+}
