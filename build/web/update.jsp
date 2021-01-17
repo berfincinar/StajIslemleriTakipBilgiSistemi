@@ -95,6 +95,7 @@ while(resultSet.next()){
         <label>
         <input type="text" name="sinif" placeholder="Sınıf" value="<%=resultSet.getString("sinif") %>" />
         </label>
+        
          <label>
         <input type="text" name="sirketAdi" placeholder="Şirket Adı" value="<%=resultSet.getString("sirketAdi") %>" />
         </label>
