@@ -14,7 +14,6 @@
 String id = request.getParameter("userid");
 String driver = "com.mysql.jdbc.Driver";
 String connectionUrl = "jdbc:mysql://b784792f5d9787:2e80ccd5@eu-cdbr-west-03.cleardb.net/heroku_35946b7fed5ebe2?reconnect=true";
-
 String userid = "b784792f5d9787";
 String password = "2e80ccd5";
 try {

@@ -5,7 +5,7 @@
     String ogrNo = request.getParameter("ogrNo");    
     String sifre = request.getParameter("sifre");
     Class.forName("com.mysql.jdbc.Driver");
-    Connection con = DriverManager.getConnection("mysql://b784792f5d9787:2e80ccd5@eu-cdbr-west-03.cleardb.net/heroku_35946b7fed5ebe2?reconnect=true", "b784792f5d9787", "2e80ccd5");
+    Connection con = DriverManager.getConnection("jdbc:mysql://b784792f5d9787:2e80ccd5@eu-cdbr-west-03.cleardb.net/heroku_35946b7fed5ebe2?reconnect=true", "b784792f5d9787", "2e80ccd5");
     Statement st = con.createStatement();
     ResultSet rs;
     rs = st.executeQuery("select * from register where ogrNo='" + ogrNo + "' and sifre='" + sifre + "'");
