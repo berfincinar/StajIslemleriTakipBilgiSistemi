@@ -8,7 +8,7 @@
     String sifre = request.getParameter("sifre");
     
     Class.forName("com.mysql.jdbc.Driver");
-    Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/registerdb?useUnicode=true&useLegacyDatetimeCode=false&serverTimezone=Turkey&characterEncoding=UTF-8", "root", "0658.Hadise");
+    Connection con = DriverManager.getConnection("jdbc:mysql://b784792f5d9787:2e80ccd5@eu-cdbr-west-03.cleardb.net/heroku_35946b7fed5ebe2?reconnect=true", "b784792f5d9787", "2e80ccd5");
     Statement st = con.createStatement();
     //ResultSet rs;
     int i = st.executeUpdate("insert into ogretmenbilgi(ogretmenIsimSoyisim, ogretmenBolum, ogretmenAlan, sifre) values ('" + ogretmenIsimSoyisim + "','" + ogretmenBolum + "','" + ogretmenAlan + "','" + sifre + "')");

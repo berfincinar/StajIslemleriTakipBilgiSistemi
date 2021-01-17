@@ -2,9 +2,9 @@
 <%@ page pageEncoding="UTF-8" %>
 <%@ page import="java.sql.*" %>
 <%! String driverName = "com.mysql.jdbc.Driver";%>
-<%!String url = "jdbc:mysql://localhost:3306/registerdb";%>
-<%!String user = "root";%>
-<%!String psw = "0658.Hadise";%>
+<%!String url = "jdbc:mysql://b784792f5d9787:2e80ccd5@eu-cdbr-west-03.cleardb.net/heroku_35946b7fed5ebe2?reconnect=true";%>
+<%!String user = "b784792f5d9787";%>
+<%!String psw = "2e80ccd5";%>
 <%
     request.setCharacterEncoding("UTF-8");
 String idregister = request.getParameter("idregister");
@@ -25,7 +25,7 @@ int personID = Integer.parseInt(idregister);
 try
 {
 Class.forName(driverName);
-con = DriverManager.getConnection("jdbc:mysql://localhost:3306/registerdb?useUnicode=true&useLegacyDatetimeCode=false&serverTimezone=Turkey&characterEncoding=UTF-8", "root", "0658.Hadise");
+con = DriverManager.getConnection("jdbc:mysql://b784792f5d9787:2e80ccd5@eu-cdbr-west-03.cleardb.net/heroku_35946b7fed5ebe2?reconnect=true", "b784792f5d9787", "2e80ccd5");
 String sql="Update register set ogrNo=?,isim=?,soyisim=?,eMail=?,telNo=?,bolum=?,sinif=?,danisman=?,sirketAdi=?where idregister="+idregister;
 ps = con.prepareStatement(sql);
 

@@ -10,7 +10,7 @@ public class registerDao {
         Class.forName("com.mysql.jdbc.Driver");
 
         try (Connection connection = DriverManager
-            .getConnection("jdbc:mysql://localhost:3306/registerdb?useUnicode=true&useLegacyDatetimeCode=false&serverTimezone=Turkey&characterEncoding=UTF-8", "root", "0658.Hadise");
+            .getConnection("jdbc:mysql://b784792f5d9787:2e80ccd5@eu-cdbr-west-03.cleardb.net/heroku_35946b7fed5ebe2?reconnect=true", "b784792f5d9787", "2e80ccd5");
 
             // Adım 2: Bağlantı nesnesini kullanarak bir ifade oluşturun
             PreparedStatement preparedStatement = connection.prepareStatement(INSERT_USERS_SQL)) {
